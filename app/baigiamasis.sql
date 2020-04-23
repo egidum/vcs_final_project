@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS baigiamasis
+CHARACTER SET 'utf8mb4'
+COLLATE 'utf8mb4_0900_ai_ci';
+
+USE baigiamasis;
+
+CREATE TABLE IF NOT EXISTS clients(
+    id INT AUTO_INCREMENT,
+    fname VARCHAR(150) NOT NULL,
+    lname VARCHAR(150) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(30) NOT NULL,
+    title TEXT NOT NULL,
+    comments VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
